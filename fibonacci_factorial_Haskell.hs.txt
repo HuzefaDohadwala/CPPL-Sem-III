@@ -1,0 +1,21 @@
+fib :: Integer -> Integer
+fib 0 = 0
+fib 1 = 1
+fib n = fib (n-1) + fib (n-2)
+
+main = do
+    cin<-getLine
+    let n=(read cin :: Integer)
+    let c= fib n
+    print(c)
+
+
+fact :: Int -> Int
+fact n|n==0=1
+fact n|n/=0=n*fact(n-1)
+
+main = do
+    cin<-getLine
+    let n=(read cin :: Int)
+    let c= fact n
+    print(c)
